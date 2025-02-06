@@ -23,8 +23,8 @@ def init_game():
 if 'selected_song' not in st.session_state:
     init_game()
 
-st.title("찬양 맞추기 (행맨) 게임")
-st.subheader("다음 찬양 제목을 맞춰보세요!")
+st.title("공동체 훈련[찬양] 6번, 행맨 게임")
+st.subheader("제목을 맞춰보세요!")
 
 # 현재 상태 표시
 st.write("현재 상태(업데이트 되는게 느려요 이해좀): ", st.session_state['display_word'])
