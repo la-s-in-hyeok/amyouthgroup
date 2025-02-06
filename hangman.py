@@ -14,7 +14,7 @@ songs = [
 def init_game():
     st.session_state['selected_song'] = random.choice(songs)
     st.session_state['display_word'] = re.sub(r'[^ ]', '_', st.session_state['selected_song'])
-    st.session_state['remaining_attempts'] = 18
+    st.session_state['remaining_attempts'] = 12
     st.session_state['guessed_letters'] = set()
     st.session_state['guessed_words'] = []
     st.session_state['game_over'] = False
