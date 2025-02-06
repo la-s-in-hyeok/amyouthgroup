@@ -61,7 +61,7 @@ if not st.session_state['game_over']:
             # 정답 확인
             if "_" not in st.session_state['display_word']:
                 st.session_state['game_over'] = True
-                st.success(f"축하합니다! 정답: {st.session_state['selected_song']}")
+                st.success(f"축하합니다! God bless you!!정답: {st.session_state['selected_song']}")
                 st.markdown("<h1 style='font-size:100px; text-align:center;'>1</h1>", unsafe_allow_html=True)
     
     if submit_word and full_guess:
@@ -70,7 +70,7 @@ if not st.session_state['game_over']:
         st.session_state['remaining_attempts'] -= 1
         if full_guess == st.session_state['selected_song']:
             st.session_state['game_over'] = True
-            st.success(f"축하합니다! 정답: {st.session_state['selected_song']}")
+            st.success(f"축하합니다! 은혜 많이 받으세요! 정답: {st.session_state['selected_song']}")
             st.markdown("<h1 style='font-size:100px; text-align:center;'>1</h1>", unsafe_allow_html=True)
         else:
             st.session_state['message'] = "틀렸습니다! 다시 시도하세요."
